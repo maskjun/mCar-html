@@ -7,68 +7,73 @@
   <meta name="description" content="Purity 隐私协议">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="privacy">
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="返回 Purity 首页">
+    <a class="brand" href="index.html" aria-label="返回 Purity 首页" data-i18n-aria="backHomeAria">
       <span class="brand-mark">m</span>
       <span>Purity</span>
     </a>
-    <nav class="nav-links" aria-label="页面导航">
-      <a href="index.html#features">功能介绍</a>
-      <a href="setup.html">安装指南</a>
-      <a href="privacy.html">隐私协议</a>
-      <a href="terms.html">用户协议</a>
-      <a href="mailto:support@yanyuyu.com">联系我们</a>
+    <nav class="nav-links" aria-label="页面导航" data-i18n-aria="pageNavAria">
+      <a href="index.html#features" data-i18n="features">功能介绍</a>
+      <a href="setup.html" data-i18n="setup">安装指南</a>
+      <a href="privacy.html" data-i18n="privacy">隐私协议</a>
+      <a href="terms.html" data-i18n="terms">用户协议</a>
+      <a href="mailto:support@yanyuyu.com" data-i18n="contact">联系我们</a>
+      <span class="language-switcher" aria-label="Language">
+        <button type="button" data-language="zh">中</button>
+        <button type="button" data-language="en">EN</button>
+      </span>
     </nav>
   </header>
 
   <main>
     <section class="legal-page">
-      <p class="eyebrow">Privacy Policy</p>
-      <h1>隐私协议</h1>
-      <p class="updated-date">更新日期：2026 年 5 月 23 日</p>
+      <p class="eyebrow" data-i18n="eyebrow">Privacy Policy</p>
+      <h1 data-i18n="heading">隐私协议</h1>
+      <p class="updated-date" data-i18n="updated">更新日期：2026 年 5 月 23 日</p>
 
-      <h2>1. 信息收集</h2>
-      <p>
+      <h2 data-i18n="section1Title">1. 信息收集</h2>
+      <p data-i18n="section1Text">
         Purity 尊重并保护用户隐私。应用用于展示车辆状态、行程记录、充电记录和用户配置的车辆相关设置。应用不会主动收集与功能无关的个人信息。
       </p>
 
-      <h2>2. 本地配置信息</h2>
-      <p>
+      <h2 data-i18n="section2Title">2. 本地配置信息</h2>
+      <p data-i18n="section2Text">
         用户在应用中填写的服务端地址、认证信息、电费单价和峰谷电设置，主要用于本地配置和应用功能展示。请妥善保管你的服务器地址、Token 或其他访问凭证。
       </p>
 
-      <h2>3. 车辆数据</h2>
-      <p>
+      <h2 data-i18n="section3Title">3. 车辆数据</h2>
+      <p data-i18n="section3Text">
         如应用通过用户配置的服务端请求车辆数据，相关数据的存储、处理和传输取决于用户所连接的服务端。建议用户仅连接可信任的服务端环境。
       </p>
 
-      <h2>4. 信息使用</h2>
-      <p>
+      <h2 data-i18n="section4Title">4. 信息使用</h2>
+      <p data-i18n="section4Text">
         Purity 使用相关数据用于展示车辆状态、地图位置、驾驶记录、充电记录、费用估算和用户设置。应用不会将这些信息用于与核心功能无关的用途。
       </p>
 
-      <h2>5. 信息安全</h2>
-      <p>
+      <h2 data-i18n="section5Title">5. 信息安全</h2>
+      <p data-i18n="section5Text">
         我们建议用户保护好设备访问权限和服务端认证信息。由于网络环境、用户配置或第三方服务导致的数据泄露、丢失或异常，用户应根据自身服务端环境进行安全管理。
       </p>
 
-      <h2>6. 联系我们</h2>
+      <h2 data-i18n="section6Title">6. 联系我们</h2>
       <p>
-        如对隐私协议有疑问，请通过邮件联系我们：
+        <span data-i18n="section6Text">如对隐私协议有疑问，请通过邮件联系我们：</span>
         <a class="inline-link" href="mailto:support@yanyuyu.com">support@yanyuyu.com</a>
       </p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>© 2026 Purity</span>
+    <span data-i18n="copyright">© 2026 Purity</span>
     <div>
-      <a href="index.html">首页</a>
-      <a href="setup.html">安装指南</a>
-      <a href="terms.html">用户协议</a>
-      <a href="mailto:support@yanyuyu.com">联系我们</a>
+      <a href="index.html" data-i18n="home">首页</a>
+      <a href="setup.html" data-i18n="setup">安装指南</a>
+      <a href="terms.html" data-i18n="terms">用户协议</a>
+      <a href="mailto:support@yanyuyu.com" data-i18n="contact">联系我们</a>
     </div>
   </footer>
+  <script src="i18n.js"></script>
 </body>
 </html>

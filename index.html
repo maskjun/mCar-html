@@ -7,50 +7,54 @@
   <meta name="description" content="Purity 是一款车辆数据查看工具，支持车辆状态、行程记录、充电记录、电费估算与车辆设置。">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="index">
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Purity 首页">
+    <a class="brand" href="#top" aria-label="Purity 首页" data-i18n-aria="brandHomeAria">
       <span class="brand-mark">m</span>
       <span>Purity</span>
     </a>
-    <nav class="nav-links" aria-label="页面导航">
-      <a href="#features">功能介绍</a>
-      <a href="setup.html">安装指南</a>
-      <a href="privacy.html">隐私协议</a>
-      <a href="terms.html">用户协议</a>
-      <a href="mailto:support@yanyuyu.com">联系我们</a>
+    <nav class="nav-links" aria-label="页面导航" data-i18n-aria="pageNavAria">
+      <a href="#features" data-i18n="features">功能介绍</a>
+      <a href="setup.html" data-i18n="setup">安装指南</a>
+      <a href="privacy.html" data-i18n="privacy">隐私协议</a>
+      <a href="terms.html" data-i18n="terms">用户协议</a>
+      <a href="mailto:support@yanyuyu.com" data-i18n="contact">联系我们</a>
+      <span class="language-switcher" aria-label="Language">
+        <button type="button" data-language="zh">中</button>
+        <button type="button" data-language="en">EN</button>
+      </span>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">车辆状态 · 行程记录 · 充电成本</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">车辆状态 · 行程记录 · 充电成本</p>
         <h1>Purity</h1>
-        <p class="hero-copy">
+        <p class="hero-copy" data-i18n="heroCopy">
           一个简洁清晰的车辆数据助手，帮助你查看车辆状态、回顾驾驶记录、追踪充电效率，并按本地电价估算充电费用。
         </p>
         <div class="hero-actions">
-          <a class="primary-button" href="#features">了解功能</a>
-          <a class="secondary-button" href="mailto:support@yanyuyu.com">发送邮件</a>
+          <a class="primary-button" href="#features" data-i18n="learnFeatures">了解功能</a>
+          <a class="secondary-button" href="mailto:support@yanyuyu.com" data-i18n="sendEmail">发送邮件</a>
         </div>
       </div>
 
-      <div class="device-showcase" aria-label="Purity 应用界面预览">
+      <div class="device-showcase" aria-label="Purity 应用界面预览" data-i18n-aria="previewAria">
         <div class="phone phone-front">
           <div class="phone-bar"></div>
           <div class="screen status-screen">
-            <div class="screen-title">车辆状态</div>
+            <div class="screen-title" data-i18n="vehicleStatus">车辆状态</div>
             <div class="battery-ring">
               <span>82%</span>
             </div>
             <div class="metric-row">
-              <span>续航</span>
+              <span data-i18n="range">续航</span>
               <strong>426 km</strong>
             </div>
             <div class="metric-row">
-              <span>胎压</span>
-              <strong>正常</strong>
+              <span data-i18n="tirePressure">胎压</span>
+              <strong data-i18n="normal">正常</strong>
             </div>
             <div class="mini-map">
               <span></span>
@@ -61,13 +65,13 @@
         <div class="phone phone-back">
           <div class="phone-bar"></div>
           <div class="screen charge-screen">
-            <div class="screen-title">充电记录</div>
+            <div class="screen-title" data-i18n="chargeRecords">充电记录</div>
             <div class="charge-card">
-              <span>已充电量</span>
+              <span data-i18n="chargedEnergy">已充电量</span>
               <strong>38.6 kWh</strong>
             </div>
             <div class="charge-card">
-              <span>费用估算</span>
+              <span data-i18n="costEstimate">费用估算</span>
               <strong>¥42.46</strong>
             </div>
             <div class="charge-bars">
@@ -80,47 +84,47 @@
 
     <section id="features" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Features</p>
-        <h2>核心功能</h2>
-        <p>围绕日常用车、能耗和充电成本设计，信息清晰，操作直接。</p>
+        <p class="eyebrow" data-i18n="featuresEyebrow">Features</p>
+        <h2 data-i18n="coreFeatures">核心功能</h2>
+        <p data-i18n="featureIntro">围绕日常用车、能耗和充电成本设计，信息清晰，操作直接。</p>
       </div>
 
       <div class="feature-grid">
         <article class="feature-card">
           <div class="icon">01</div>
-          <h3>车辆状态</h3>
-          <p>查看电量、续航、充电状态、胎压、温度、门窗状态和车辆位置信息。</p>
+          <h3 data-i18n="featureStatusTitle">车辆状态</h3>
+          <p data-i18n="featureStatusText">查看电量、续航、充电状态、胎压、温度、门窗状态和车辆位置信息。</p>
         </article>
         <article class="feature-card">
           <div class="icon">02</div>
-          <h3>行程记录</h3>
-          <p>回顾每次驾驶的时间、里程、能耗、电量变化和轨迹地图。</p>
+          <h3 data-i18n="featureDriveTitle">行程记录</h3>
+          <p data-i18n="featureDriveText">回顾每次驾驶的时间、里程、能耗、电量变化和轨迹地图。</p>
         </article>
         <article class="feature-card">
           <div class="icon">03</div>
-          <h3>充电记录</h3>
-          <p>查看充电时长、充入电量、充电效率、费用和实际单价。</p>
+          <h3 data-i18n="featureChargeTitle">充电记录</h3>
+          <p data-i18n="featureChargeText">查看充电时长、充入电量、充电效率、费用和实际单价。</p>
         </article>
         <article class="feature-card">
           <div class="icon">04</div>
-          <h3>电费设置</h3>
-          <p>支持普通电价和峰谷电价设置，在费用缺失时按本地规则估算。</p>
+          <h3 data-i18n="featureRateTitle">电费设置</h3>
+          <p data-i18n="featureRateText">支持普通电价和峰谷电价设置，在费用缺失时按本地规则估算。</p>
         </article>
         <article class="feature-card">
           <div class="icon">05</div>
-          <h3>安装指南</h3>
-          <p>按步骤准备 TeslaMate API、配置访问地址，并在 App 内完成服务器连接。</p>
-          <a class="inline-link" href="setup.html">查看安装指南</a>
+          <h3 data-i18n="featureSetupTitle">安装指南</h3>
+          <p data-i18n="featureSetupText">按步骤准备 TeslaMate API、配置访问地址，并在 App 内完成服务器连接。</p>
+          <a class="inline-link" href="setup.html" data-i18n="viewSetup">查看安装指南</a>
         </article>
       </div>
     </section>
 
     <section class="split-section">
       <div>
-        <p class="eyebrow">Designed for Clarity</p>
-        <h2>为清晰查看车辆数据而设计</h2>
+        <p class="eyebrow" data-i18n="clarityEyebrow">Designed for Clarity</p>
+        <h2 data-i18n="clarityTitle">为清晰查看车辆数据而设计</h2>
       </div>
-      <p>
+      <p data-i18n="clarityText">
         Purity 保持简洁的信息结构，减少干扰。状态、记录、充电和设置各自独立，适合快速查看，也适合长期追踪车辆使用表现。
       </p>
     </section>
@@ -128,9 +132,9 @@
     <section id="contact" class="section contact-section">
       <div class="contact-panel">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>联系我们</h2>
-          <p>如有问题、建议或支持需求，可以直接通过邮件联系我们。</p>
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">联系我们</h2>
+          <p data-i18n="contactText">如有问题、建议或支持需求，可以直接通过邮件联系我们。</p>
         </div>
         <a class="primary-button" href="mailto:support@yanyuyu.com">support@yanyuyu.com</a>
       </div>
@@ -139,13 +143,14 @@
   </main>
 
   <footer class="site-footer">
-    <span>© 2026 Purity</span>
+    <span data-i18n="copyright">© 2026 Purity</span>
     <div>
-      <a href="privacy.html">隐私协议</a>
-      <a href="terms.html">用户协议</a>
-      <a href="setup.html">安装指南</a>
-      <a href="mailto:support@yanyuyu.com">联系我们</a>
+      <a href="privacy.html" data-i18n="privacy">隐私协议</a>
+      <a href="terms.html" data-i18n="terms">用户协议</a>
+      <a href="setup.html" data-i18n="setup">安装指南</a>
+      <a href="mailto:support@yanyuyu.com" data-i18n="contact">联系我们</a>
     </div>
   </footer>
+  <script src="i18n.js"></script>
 </body>
 </html>

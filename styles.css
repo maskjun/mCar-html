@@ -78,6 +78,34 @@ a {
   color: var(--text);
 }
 
+.language-switcher {
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.language-switcher button {
+  min-width: 34px;
+  height: 28px;
+  padding: 0 10px;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.language-switcher button.is-active {
+  color: #fff;
+  background: var(--text);
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
@@ -603,6 +631,7 @@ h3 {
 
   .nav-links {
     width: 100%;
+    flex-wrap: wrap;
     overflow-x: auto;
     padding-bottom: 2px;
   }
